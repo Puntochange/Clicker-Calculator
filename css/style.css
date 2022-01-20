@@ -77,8 +77,8 @@ body {
 
 .btn__container div {
 	display: flex;
-	gap: 20px;
 	flex-direction: column;
+	gap: 20px
 }
 
 @media (max-width: 430px) {
@@ -161,10 +161,6 @@ body {
 .theme-button:active path {
 	fill: #f8f8f8;
 	transition: all 0.08s;
-}
-
-.icon__light {
-	width: 35px;
 }
 
 .click__container {
