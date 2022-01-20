@@ -1,0 +1,252 @@
+body {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1a1a1a;
+	font-family: "Ubuntu";
+	height: 100vh;
+	transition: all 0.08s;
+}
+
+.wrapper {
+	padding: 15px 60px;
+	max-width: 500px;
+	max-height: 400px;
+	background-color: #2b2b2b;
+	border-radius: 8px;
+	box-shadow: 1px 4px 16px #0e0e0e;
+	transition: all 0.08s;
+}
+
+@media (max-width: 430px) {
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+		max-width: 250px;
+		max-height: 500px;
+	}
+}
+
+.frame {
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+}
+
+@media (max-width: 430px) {
+	.frame {
+		margin: 0 auto;
+		max-width: 250px;
+		max-height: 300px;
+	}
+}
+
+.title {
+	width: 400px;
+	text-align: center;
+	font-weight: 700;
+	padding: 30px 0px 0px 0px;
+	font-size: 41px;
+	letter-spacing: 1px;
+	color: #dfdfdf;
+	text-shadow: 1px 2px 1px #000000;
+	margin-bottom: 50px;
+	transition: all 0.08s;
+}
+
+@media (max-width: 430px) {
+	.title {
+	margin-bottom: 0px;
+	max-width: 250px;
+	margin-top:	10px;
+	font-size: 24px;
+	padding: 0px;
+	}
+}
+
+.btn__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.btn__container div {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+@media (max-width: 430px) {
+	.btn__container div {
+		margin: 20px;
+	}
+}
+
+.btn__container div button {
+	box-sizing: border-box;
+	color: #dfdfdf;
+	width: 160px;
+	height: 60px;
+	box-shadow: 1px 4px 8px #0e0e0e;
+	font-weight: 700;
+	border: none;
+	border-radius: 8px;
+	font-size: 24px;
+	background-color: #313131;
+	transition: all 0.08s;
+}
+
+@media (max-width: 430px) {
+	.btn__container div button {
+		width: 85px;
+		height: 65px;
+	}
+}
+
+.btn__container div button:active {
+	color: #8f8f8f;
+	background-color: #242424;
+	transition: all 0.08s;
+}
+
+.container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 430px) {
+	.container {
+		margin: 0 auto;
+		width: 210px;
+	}
+}
+
+.theme-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: #1f1f1f;
+	letter-spacing: 1px;
+	width: 100px;
+	height: 50px;
+	box-shadow: 1px 4px 8px #0e0e0e;
+	font-weight: 700;
+	border: none;
+	border-radius: 8px;
+	font-size: 19px;
+	background-color: #ffffff;
+	transition: all 0.08s;
+}
+
+@media (max-width: 430px) {
+	.theme-button {
+		margin-right: 10px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.theme-button:active {
+	background-color: #242424;
+	transition: all 0.08s;
+}
+.theme-button:active path {
+	fill: #f8f8f8;
+	transition: all 0.08s;
+}
+
+.icon__light {
+	width: 35px;
+}
+
+.click__container {
+	width: 275px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: #313131;
+	box-shadow: 1px 4px 8px #0e0e0e;
+	transition: 0.3s;
+	transition: all 0.08s;
+}
+
+@media (max-width: 430px) {
+	.click__container {
+		width: 145px;
+		height: 50px;
+	}
+}
+
+.click {
+	display: block;
+	padding: 10px 0px 10px 0px;
+	color: #dfdfdf;
+	font-size: 26px;
+	font-weight: 700;
+	text-align: end;
+	align-items: center;
+	margin-right: 22px;
+}
+
+/*--------Light-----------------------------------------------*/
+
+body.light-theme {
+	background-color: #f4f4f4;
+	transition: all 0.08s;
+}
+
+.light-theme .wrapper {
+	background-color: #ffffff;
+	box-shadow: 1px 4px 16px #b1b1b1;
+	transition: all 0.08s;
+}
+
+.light-theme .title {
+	color: #636363;
+	text-shadow: none;
+	transition: all 0.08s;
+}
+
+.light-theme .btn__container div button {
+	color: #ffffff;
+	background-color: #5b6dcd;
+	transition: all 0.08s;
+	box-shadow: none;
+}
+
+.light-theme .btn__container div button:active {
+	color: #ffffff;
+	background-color: rgb(156, 171, 255);
+	transition: all 0.08s;
+	box-shadow: none;
+}
+
+.light-theme .theme-button {
+	background-color: #636363;
+	transition: all 0.08s;
+	box-shadow: none;
+}
+
+.light-theme .theme-button:active {
+	background-color: #474747;
+	transition: all 0.08s;
+	box-shadow: none;
+}
+
+.light-theme .click__container {
+	background-color: #c2c2c2;
+	transition: all 0.08s;
+	box-shadow: none;
+}
+
+.light-theme .click {
+	color: #4d4d4d;
+	transition: all 0.08s;
+}
